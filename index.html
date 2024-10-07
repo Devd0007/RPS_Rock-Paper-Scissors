@@ -3,52 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock, Paper, Scissors Game</title>
+    <title>Rock, Paper, Scissors</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
+            background-color: #f7f7f7;
         }
         h1 {
-            margin-top: 20px;
             color: #333;
-        }
-        .choices, .scoreboard {
             margin-top: 20px;
         }
-        button {
-            padding: 10px 20px;
-            margin: 10px;
-            font-size: 18px;
-            cursor: pointer;
+        .choices {
+            margin-top: 30px;
         }
-        .images {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .images img {
+        .choices img {
             width: 100px;
             height: 100px;
-            margin: 0 20px;
-        }
-        .scoreboard {
-            font-size: 20px;
-        }
-        .reset-btn {
-            margin-top: 30px;
-            padding: 10px 25px;
-            font-size: 16px;
-            background-color: #ff5252;
-            color: white;
-            border: none;
             cursor: pointer;
+            margin: 10px;
         }
-        .reset-btn:hover {
-            background-color: #ff2a2a;
+        #result {
+            margin-top: 30px;
+            font-size: 24px;
+            color: #555;
         }
     </style>
 </head>
@@ -57,31 +35,14 @@
     <h1>Rock, Paper, Scissors</h1>
 
     <div class="choices">
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
+        <img id="rock" src="rock.png" alt="Rock">
+        <img id="paper" src="ppr.png" alt="Paper">
+        <img id="scissors" src="scr.png" alt="Scissors">
     </div>
 
-    <div class="images">
-        <div>
-            <h3>Your Choice:</h3>
-            <img id="user-choice-img" alt="Your choice">
-        </div>
-        <div>
-            <h3>Computer's Choice:</h3>
-            <img id="computer-choice-img" alt="Computer's choice">
-        </div>
-    </div>
-
-    <div class="scoreboard">
-        <p>Result: <span id="result">Make a choice to start the game!</span></p>
-        <p>Your Score: <span id="user-score">0</span></p>
-        <p>Computer Score: <span id="computer-score">0</span></p>
-    </div>
-
-    <button class="reset-btn" id="reset">Reset Game</button>
+    <div id="result">Make your choice!</div>
 
     <script src="script.js"></script>
-
+    
 </body>
 </html>
